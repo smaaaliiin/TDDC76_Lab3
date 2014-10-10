@@ -1,0 +1,55 @@
+OLIKA KOMMANDON ATT ANVÄNDA I GIT
+
+git status
+
+git add <filnamn, ev. en lista på filnamn>
+    stagear filerna.
+
+git commit <ev. lista på filnamn> -m 'Medelande om vad som görs'
+    filerna läggs till i min branch
+
+git log
+    visar en log över vad för ändringar som lagts till i min branch.
+
+git remote add <repository name> https://github.com/smaaaliiin
+    skapar en repository på github innom min användare.
+
+git push -u <repository name> <branch name> 
+    pushar allt i min branch till min repository (välj den på github)
+    u-et indikerar att nästa gång kan jag bara skriva 'git push'
+
+git push
+
+git pull <repository name> <branch name> 
+    tar ner alla förändringar i filerna från min repository till min bransh
+    som jag jobbar i.
+
+git diff
+    ger alla förändringar gjorda i filerna.
+
+git diff HEAD
+    HEAD gör så att det är de senaste ändringarna som visas.
+
+git diff --staged
+    de stageade filernas ändringar visas
+
+git reset <filnamn>
+    tar tillbaka en tidigare verition av filerna.
+
+git checkout -- <filnamn>
+    Files can be changed back to how they were at the last commit
+
+git branch <branch_name>
+    skapar en ny branch
+
+git checkout <branch>
+    byter branch. bort från den du är i och till <branch>
+
+git rm <filnamn>
+    removes filen eller de listade filerna
+
+git merge <branch>
+    mergar ihop den branchen du står i (förslagsvis din mainbranch) och den listade branchen.
+
+git branch -d <branch_name>
+    tar bort den listade branchen.
